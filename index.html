@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>BMI Calculator</h1>
+      <main>
+        <div class="image">
+          <div class="image_background">
+            <picture>
+              <source media="(max-width:640px)" srcset="/assets/img/3.jpg" />
+              <img src="/assets/img/4.jpg" alt="calculator" />
+            </picture>
+          </div>
+          <div class="bmi_description">
+            <p>
+              This calculator should only be used by adults. It will give you an
+              idea of how your weight compares to common value.
+            </p>
+            <p id="textTyping"></p>
+          </div>
+        </div>
+        <div class="bmi_wrapper">
+          <form>
+            <div class="bmi_wrapper__input">
+              <div class="bmi_wrapper__item">
+                <p class="input_title">Your Age</p>
+                <input
+                  id="age"
+                  class="input"
+                  type="text"
+                  onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                />
+              </div>
+              <div class="bmi_wrapper__item">
+                <p class="input_title">Height in cm</p>
+                <input
+                  id="height"
+                  class="input"
+                  type="text"
+                  onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                />
+              </div>
+              <div class="bmi_wrapper__item">
+                <p class="input_title">Weight in kg</p>
+                <input
+                  id="weight"
+                  class="input"
+                  type="text"
+                  onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                />
+              </div>
+            </div>
+            <div class="button_container">
+              <button id="calculate" class="btn_calculate">Calculate</button>
+              <button id="reset" class="btn_reset">Reset</button>
+            </div>
+          </form>
+          <div class="bmi_result">
+            <div class="bmi_number">Your BMI: <span id="bmiNumber"></span></div>
+            <div id="bmiDescription"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
