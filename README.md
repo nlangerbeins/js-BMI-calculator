@@ -1,6 +1,5 @@
 # BMI Calculator
 
-https://bmi-calculator-nlangerbeins.glitch.me/
 ![cover](./assets/img/mockup.png)
 
 ## About
