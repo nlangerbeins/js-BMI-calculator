@@ -3,12 +3,9 @@
 https://bmi-calculator-nlangerbeins.glitch.me/
 ![cover](./assets/img/mockup.png)
 
-### About
-
----
+## About
 
 The BMI _(Body Mass Index)_ Calculator is designed to calculate BMI values and determine weight status based on a person's age, height and weight.
-<br/>
 
 ### Used Technologies
 
